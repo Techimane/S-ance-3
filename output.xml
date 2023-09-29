@@ -1,94 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230921 21:36:34.691" rpa="false" schemaversion="4">
-<suite id="s1" name="Test01" source="c:\Users\elidr\Desktop\Ma session 3\Techniques d'automatisation des tests 1\Laboratoire\Séance 3\TestCases\Test01.robot">
-<test id="s1-t1" name="Tc001 login test" line="6">
-<kw name="Se connecter a l'application orange demo" library="resource01">
-<kw name="Open Browser" library="SeleniumLibrary">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230928 21:25:17.945" rpa="false" schemaversion="4">
+<suite id="s1" name="Test04" source="c:\Users\elidr\Desktop\Ma session 3\Techniques d'automatisation des tests 1\Laboratoire\Séance 3\TestCases\test04.robot">
+<test id="s1-t1" name="Tc001 login test" line="9">
+<kw name="Se connecter a l'application orange demo">
 <arg>${url}</arg>
 <arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${myurl}</arg>
+<arg>${myBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230921 21:36:34.862" level="INFO">Opening browser 'edge' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<status status="PASS" starttime="20230921 21:36:34.862" endtime="20230921 21:36:37.687"/>
+<msg timestamp="20230928 21:25:18.137" level="INFO">Opening browser 'edge' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20230928 21:25:18.136" endtime="20230928 21:25:21.100"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230921 21:36:37.687" endtime="20230921 21:36:37.799"/>
+<status status="PASS" starttime="20230928 21:25:21.100" endtime="20230928 21:25:21.215"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230921 21:36:40.799" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230921 21:36:37.799" endtime="20230921 21:36:40.800"/>
+<msg timestamp="20230928 21:25:24.216" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230928 21:25:21.216" endtime="20230928 21:25:24.216"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:34.860" endtime="20230921 21:36:40.800"/>
+<status status="PASS" starttime="20230928 21:25:18.136" endtime="20230928 21:25:24.217"/>
 </kw>
-<kw name="saisir le nom d'utilisateur" library="resource01">
+<kw name="saisir le nom d'utilisateur">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>name:username</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230921 21:36:40.803" endtime="20230921 21:36:40.855"/>
+<status status="PASS" starttime="20230928 21:25:24.219" endtime="20230928 21:25:24.263"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:username</arg>
 <arg>Admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 21:36:40.856" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20230921 21:36:40.855" endtime="20230921 21:36:40.914"/>
+<msg timestamp="20230928 21:25:24.263" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20230928 21:25:24.263" endtime="20230928 21:25:24.311"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:40.801" endtime="20230921 21:36:40.914"/>
+<status status="PASS" starttime="20230928 21:25:24.218" endtime="20230928 21:25:24.311"/>
 </kw>
-<kw name="Saisir le mot de passe" library="resource01">
+<kw name="Saisir le mot de passe">
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>name:username</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230921 21:36:40.914" endtime="20230921 21:36:40.952"/>
+<status status="PASS" starttime="20230928 21:25:24.311" endtime="20230928 21:25:24.336"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>name:password</arg>
 <arg>admin123</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 21:36:40.952" level="INFO">Typing password into text field 'name:password'.</msg>
-<msg timestamp="20230921 21:36:40.991" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230921 21:36:41.042" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230921 21:36:40.952" endtime="20230921 21:36:41.042"/>
+<msg timestamp="20230928 21:25:24.336" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg timestamp="20230928 21:25:24.362" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230928 21:25:24.408" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230928 21:25:24.336" endtime="20230928 21:25:24.408"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:40.914" endtime="20230921 21:36:41.042"/>
+<status status="PASS" starttime="20230928 21:25:24.311" endtime="20230928 21:25:24.408"/>
 </kw>
-<kw name="Cliquer sur le boutton login" library="resource01">
+<kw name="Cliquer sur le boutton login">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230921 21:36:41.043" level="INFO">Clicking button 'xpath://button'.</msg>
-<status status="PASS" starttime="20230921 21:36:41.043" endtime="20230921 21:36:41.999"/>
+<msg timestamp="20230928 21:25:24.410" level="INFO">Clicking button 'xpath://button'.</msg>
+<status status="PASS" starttime="20230928 21:25:24.409" endtime="20230928 21:25:25.367"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230921 21:36:45.001" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230921 21:36:41.999" endtime="20230921 21:36:45.001"/>
+<msg timestamp="20230928 21:25:28.369" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230928 21:25:25.368" endtime="20230928 21:25:28.370"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:41.042" endtime="20230921 21:36:45.001"/>
+<status status="PASS" starttime="20230928 21:25:24.409" endtime="20230928 21:25:28.370"/>
 </kw>
-<kw name="valider l'affichage de la page d'acceuil" library="resource01">
+<kw name="valider l'affichage de la page d'acceuil">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://h6</arg>
 <arg>Dashboard</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230921 21:36:45.002" level="INFO">Verifying element 'xpath://h6' contains exact text 'Dashboard'.</msg>
-<status status="PASS" starttime="20230921 21:36:45.002" endtime="20230921 21:36:45.022"/>
+<msg timestamp="20230928 21:25:28.374" level="INFO">Verifying element 'xpath://h6' contains exact text 'Dashboard'.</msg>
+<status status="PASS" starttime="20230928 21:25:28.373" endtime="20230928 21:25:28.398"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:45.002" endtime="20230921 21:36:45.022"/>
+<status status="PASS" starttime="20230928 21:25:28.372" endtime="20230928 21:25:28.398"/>
 </kw>
-<kw name="Fermer l'application" library="resource01">
+<kw name="Fermer l'application">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230921 21:36:45.023" endtime="20230921 21:36:47.268"/>
+<status status="PASS" starttime="20230928 21:25:28.399" endtime="20230928 21:25:30.679"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:45.023" endtime="20230921 21:36:47.268"/>
+<status status="PASS" starttime="20230928 21:25:28.399" endtime="20230928 21:25:30.680"/>
 </kw>
-<status status="PASS" starttime="20230921 21:36:34.859" endtime="20230921 21:36:47.269"/>
+<status status="PASS" starttime="20230928 21:25:18.133" endtime="20230928 21:25:30.680"/>
 </test>
-<status status="PASS" starttime="20230921 21:36:34.695" endtime="20230921 21:36:47.271"/>
+<status status="PASS" starttime="20230928 21:25:17.950" endtime="20230928 21:25:30.683"/>
 </suite>
 <statistics>
 <total>
@@ -97,7 +99,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test01">Test01</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test04">Test04</stat>
 </suite>
 </statistics>
 <errors>
